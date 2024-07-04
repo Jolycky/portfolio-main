@@ -36,7 +36,7 @@ jobs:
       - name: GitHub Action for npx
         uses: mikeal/npx@1.0.0
       - name: Run NPM Install
-        run: npm install
+        run: npm ci
       - name: Run the static build step
         run: npm run build
       - name: Upload artifact
