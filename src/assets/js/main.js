@@ -1,6 +1,6 @@
 // Add your javascript here
 
-window.darkMode = false;
+window.darkMode = true;
 
 const stickyClasses = ["fixed", "h-14"];
 const unstickyClasses = ["absolute", "h-20"];
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		localStorage.getItem("dark_mode") &&
 		localStorage.getItem("dark_mode") === "true"
 	) {
-		window.darkMode = true;
+		window.darkMode = false;
 		showNight();
 	} else {
 		showDay();
